@@ -1,0 +1,279 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a,h1,p,span,h2, div{
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* 공통요소 */
+
+.a {
+    background-color: red;
+}
+.b {
+    background-color: orange;
+}
+.c {
+    background-color: yellow;
+}
+.d {
+    background-color: green;
+}
+.e {
+    background-color: blue;
+}
+.f {
+    background-color: aquamarine;
+}
+.g {
+    background-color: purple;
+}
+
+.red {
+    color: #dd2222;
+}
+.blue {
+    color: #22bb22;
+}
+.mt-0 {
+    margin-top: 0 !important;
+}
+.contents {
+    position: relative;
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+}
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    position: relative;
+    display: block;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #333;
+}
+.side::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 20px;
+    background-color: #333;
+    z-index: 999;
+}
+.side::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 20px;
+    background-color: #333;
+    z-index: 999;
+}
+.fixed-wrap {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: calc(100vw - 5vw);
+    height: calc(100vh - 5vh);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    z-index: 999;
+}
+.header {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+.logo {
+    position: absolute;
+    display: block;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    padding: 2px 10px 0;
+    border: 2px solid #fff;
+    background-color: #333;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.main {
+    position: relative;
+    
+    margin-top: 22px;
+    display: block;
+    height: 100px;
+}
+.flex {
+    position: relative;
+    display: block;
+}
+.flex>h1 {
+    position: relative;
+    display: block;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+.flex>p {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.flex>p::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.tit {
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 25px;
+}
+.desc {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #999;
+}
+.box {
+    position: relative;
+    display: flex;
+    border: 1px solid #fff;
+    margin-right: 10%;
+}
+.content-box {
+    display: inline-block;
+    margin-top: 50px;
+}
+.content-box>span{
+    position: relative;
+    display: block;
+    font-size: 20px;
+}
+
+.part1 .box1 {
+    flex-direction: row;
+}
+.part1 .box2 {
+    flex-direction:row-reverse;
+}
+.part1 .box3 {
+    flex-direction:column;
+}
+.part1 .box4 {
+    flex-direction:column-reverse;
+}
+.item {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #000;
+    width: 150px;
+    height: 150px;
+}
+.part2 .item {
+    width: 300px;
+}
+.part2 .box1 {
+    flex-wrap: wrap;
+}
+.part2 .box2 {
+    flex-wrap: nowrap;
+}
+.part2 .box3 {
+    flex-wrap:wrap-reverse;
+}
+.part4 .box1 .a{
+    flex-grow: 1;
+}
+.part4 .box2 .item,
+.part4 .box3 .item{
+    width: 500px;
+}
+.part4 .box2 .a{
+    flex-shrink: 2;
+}
+.part4 .box3 .a{
+    flex-shrink: 0;
+}
+.part4 .box4 .a{
+    flex-basis: 100px;
+}
+.part5 .box {
+    height: 400px;
+}
+.part5 .box1 {
+    align-items:flex-start;
+}
+.part5 .box2 {
+    align-items:flex-end;
+}
+.part5 .box3 {
+    align-items:center;
+}
+.part6 .box1 {
+    justify-content: flex-start;
+}
+.part6 .box2 {
+    justify-content: flex-end;
+}
+.part6 .box3 {
+    justify-content: space-between;
+}
+.part6 .box4 {
+    justify-content:space-around;
+}

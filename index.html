@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>GLEX : grid & flex</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="side"></div>
+    <div class="fixed-wrap">
+        <header class="header">
+            <a href="index.html" class="logo">GLEX</a>
+        </header>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="flex">
+                <h1># FLEX</h1>
+                <p>flexbox 안 아이템 간 <b class="red">공간 배분</b>과 <b class="red">강력한 정렬 기능</b>을 제공</p>
+                <p>하나의 행이나 열로 관리되는 <b class="blue">1차원</b> 레이아웃 모델 ( grid와 대조됨 )</p>
+                <div class="contents part1">
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-direction : row}</h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-direction : row-reverse}</h2>
+                        <span>BOX</span>
+                        <div class="box box2">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-direction : column}</h2>
+                        <span>BOX</span>
+                        <div class="box box3">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-direction : column-reverse}</h2>
+                        <span>BOX</span>
+                        <div class="box box4">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents part2">
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-wrap: wrap}<span class="desc">(넘칠 시 줄내림)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-wrap: nowrap}<span class="desc">(아이템 크기가 줄고 줄내림 되지 않음)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box2">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-wrap: wrap-reverse}<span class="desc">(넘칠 시 줄올림)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box3">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents part3">
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {flex-flow: row wrap}<span class="desc">(flex-flow : flex-direction flex-wrap 한 줄로 작성)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents part4">
+                    <div class="content-box">
+                        <h2 class="tit">A = {flex-grow : 1}<span class="desc">(여백을 전체 수 / 속성값으로 나눠가짐)</span> </h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">A = {flex-shrink : 2}<span class="desc">(컨테이너가 비좁아서 item이 다 못 들어갈 때만 사용가능)</span> </h2>
+                        <span>BOX</span>
+                        <div class="box box2">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">A = {flex-shrink : 0}<span class="desc">(A는 죽어도 안 줄어들겠다는 소리. A는 개인주의야)</span> </h2>
+                        <span>BOX</span>
+                        <div class="box box3">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">A = {flex-basis : 100px}<span class="desc">(item의 크기 지정)</span> </h2>
+                        <span>BOX</span>
+                        <div class="box box4">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">A = {flex : 1 1 auto}<span class="desc">(위 세 속성의 축약형 grow shrink basis 순으로 작성)</span> </h2>
+                        <span>BOX</span>
+                        <div class="box box5">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents part5">
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {align-items:flex-start}<span class="desc">(item을 정렬(위 아래)할 때 사용 default : stretch)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {align-items:flex-end}<span class="desc"></span></h2>
+                        <span>BOX</span>
+                        <div class="box box2">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {align-items:center}<span class="desc"></span></h2>
+                        <span>BOX</span>
+                        <div class="box box3">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents part6">
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {justify-content: flex-start}<span class="desc">(좌측 정렬 사용 default : flex-start)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box1">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {justify-content: flex-end}<span class="desc">(우측 정렬)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box2">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {justify-content: space-between}<span class="desc">(item끼리 일정한 간격을 두고 정렬)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box3">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h2 class="tit">BOX = {justify-content: space-around}<span class="desc">(item이 양 옆으로 여백을 두고 정렬)</span></h2>
+                        <span>BOX</span>
+                        <div class="box box4">
+                            <div class="item a">A</div>
+                            <div class="item b">B</div>
+                            <div class="item c">C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
