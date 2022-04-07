@@ -8,10 +8,15 @@
     /* outline-style: none; */
 }
 
-a,h1,span,h2, div{
+a,
+h1,
+span,
+h2,
+div {
     color: #fff;
     text-decoration: none;
 }
+
 p {
     color: #aaa;
 }
@@ -34,38 +39,50 @@ html {
 .a {
     background-color: #333;
 }
+
 .b {
     background-color: #555;
 }
+
 .c {
     background-color: #777;
 }
+
 .d {
-    background-color: green;
+    background-color: #999;
 }
+
 .e {
     background-color: blue;
 }
+
 .f {
     background-color: aquamarine;
 }
+
 .g {
     background-color: purple;
 }
 
-.font-yellow {
+.fy {
     color: #bbbb00;
     font-weight: bold;
 }
+.attr {
+    color: #aaa;
+}
+
 .mt-0 {
     margin-top: 0 !important;
 }
+
 .contents {
     position: relative;
     display: flex;
     margin-left: 50px;
     flex-direction: column;
 }
+
 .clearfix::after {
     content: '';
     position: relative;
@@ -79,7 +96,7 @@ html {
     display: block;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 0 10%;
+    padding: 5% 10%;
 }
 
 body {
@@ -87,6 +104,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #111;
 }
+
 .side::before {
     content: '';
     position: fixed;
@@ -98,6 +116,7 @@ body {
     background-color: #111;
     z-index: 999;
 }
+
 .side::after {
     content: '';
     position: fixed;
@@ -109,6 +128,7 @@ body {
     background-color: #111;
     z-index: 999;
 }
+
 .fixed-wrap {
     position: fixed;
     top: 20px;
@@ -121,12 +141,14 @@ body {
     border-radius: 20px;
     z-index: 999;
 }
+
 .header {
     position: relative;
     display: block;
     width: 100%;
 
 }
+
 .logo {
     position: absolute;
     display: block;
@@ -138,37 +160,41 @@ body {
     border: 2px solid #fff;
     background-color: #111;
     border-radius: 10px;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     z-index: 9999;
 }
 
 .main {
     position: relative;
-    
+
     margin-top: 22px;
     display: block;
     height: 100px;
 }
+
 .flex {
     position: relative;
-    display: block;
+    display: none;
 }
-.flex>h1 {
+
+.main>.container>div>h1 {
     position: relative;
     display: block;
     font-size: 35px;
     margin-bottom: 20px;
     padding-top: 100px;
 }
-.flex>p {
+
+.main>.container>div>p {
     position: relative;
     display: block;
     margin-left: 20px;
     margin-bottom: 10px;
     font-size: 20px;
 }
-.flex>p::before {
+
+.main>.container p::before {
     content: '';
     position: absolute;
     top: 10px;
@@ -176,31 +202,36 @@ body {
     display: block;
     width: 4px;
     height: 4px;
-    background-color: #fff;
+    background-color: #aaa;
     border-radius: 2px;
 }
+
 .tit {
     position: relative;
     margin-bottom: 20px;
     display: inline-block;
     font-size: 25px;
 }
+
 .desc {
     font-size: 20px;
     margin-left: 10px;
     color: #999;
 }
-.box {
+
+.flex .box {
     position: relative;
     display: flex;
     border: 1px solid #fff;
     margin-right: 10%;
 }
+
 .content-box {
     display: inline-block;
     margin-top: 50px;
 }
-.content-box>span{
+
+.content-box>span {
     position: relative;
     display: block;
     font-size: 20px;
@@ -209,81 +240,179 @@ body {
 .part1 .box1 {
     flex-direction: row;
 }
+
 .part1 .box2 {
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
+
 .part1 .box3 {
-    flex-direction:column;
+    flex-direction: column;
     width: 50%;
 }
+
 .part1 .box4 {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
     width: 50%;
 }
-.item {
+
+.flex .item {
     position: relative;
     display: block;
     width: 150px;
     height: 150px;
 }
+
 .item>span {
     position: absolute;
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 40px;
 }
+
 .part2 .item {
     width: 300px;
 }
+
 .part2 .box1 {
     flex-wrap: wrap;
 }
+
 .part2 .box2 {
     flex-wrap: nowrap;
 }
+
 .part2 .box3 {
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
-.part4 .box1 .a{
+
+.part4 .box1 .a {
     flex-grow: 1;
 }
+
 .part4 .box2 .item,
-.part4 .box3 .item{
+.part4 .box3 .item {
     width: 500px;
 }
-.part4 .box2 .a{
+
+.part4 .box2 .a {
     flex-shrink: 2;
 }
-.part4 .box3 .a{
+
+.part4 .box3 .a {
     flex-shrink: 0;
 }
-.part4 .box4 .a{
+
+.part4 .box4 .a {
     flex-basis: 100px;
 }
+
 .part5 .box {
     height: 400px;
 }
+
 .part5 .box1 {
-    align-items:flex-start;
+    align-items: flex-start;
 }
+
 .part5 .box2 {
-    align-items:flex-end;
+    align-items: flex-end;
 }
+
 .part5 .box3 {
-    align-items:center;
+    align-items: center;
 }
+
 .part6 .box1 {
     justify-content: flex-start;
 }
+
 .part6 .box2 {
     justify-content: flex-end;
 }
+
 .part6 .box3 {
     justify-content: space-between;
 }
+
 .part6 .box4 {
-    justify-content:space-around;
+    justify-content: space-around;
+}
+.grid {
+    display: none;
+}
+.grid .box {
+    position: relative;
+    display: grid;
+    border: 1px solid #fff;
+
+}
+.grid-part1 .box1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    margin-bottom: 50px;
+}
+.grid .item {
+    position: relative;
+    display: block;
+}
+.grid-part1 .box1 .a {
+    grid-column: 1;
+    grid-row: 1/4;
+    z-index: 1;
+}
+
+.grid-part1 .box1 .b {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.grid-part1 .box1 .c {
+    grid-column: 3/4;
+    grid-row: 3/6;
+}
+.grid-part1 .box1 .d {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.box-txt {
+    position: relative;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+.col-box {
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-num {
+    position: relative;
+    font-size: 20px;
+    color: #bbbb00;
+}
+
+.row-box {
+    position: absolute;
+    left: -20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row-num {
+    position: relative;
+    font-size: 20px;
+    color: #bbbb00;
+}
+
+.content-box>p {
+    position: relative;
+    font-size: 20px;
+}.content-box .desc {
+    font-size: 18px ;
 }

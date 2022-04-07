@@ -30,9 +30,9 @@
     <div class="main">
         <div class="container">
             <div class="flex">
-                <h1># FLEX</h1>
-                <p>flexbox 안 아이템 간 <b class="font-yellow">공간 배분</b>과 <b class="font-yellow">강력한 정렬 기능</b>을 제공</p>
-                <p>하나의 행이나 열로 관리되는 <b class="font-yellow">1차원</b> 레이아웃 모델 ( grid와 대조됨 )</p>
+                <h1># display : FLEX</h1>
+                <p>flexbox 안 아이템 간 <b class="fy">공간 배분</b>과 <b class="fy">강력한 정렬 기능</b>을 제공</p>
+                <p>하나의 행이나 열로 관리되는 <b class="fy">1차원</b> 레이아웃 모델 ( grid와 대조됨 )</p>
                 <div class="contents part1">
                     <div class="content-box">
                         <h2 class="tit">BOX = {flex-direction : row}</h2>
@@ -102,7 +102,8 @@
                 </div>
                 <div class="contents part3">
                     <div class="content-box">
-                        <h2 class="tit">BOX = {flex-flow: row wrap}<span class="desc">(flex-flow : flex-direction flex-wrap 한 줄로 작성)</span></h2>
+                        <h2 class="tit">BOX = {flex-flow: row wrap}<span class="desc">(flex-flow : flex-direction
+                                flex-wrap 한 줄로 작성)</span></h2>
                         <span>BOX</span>
                         <div class="box box1">
                             <div class="item a"><span>A</span></div>
@@ -122,7 +123,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <h2 class="tit">A = {flex-shrink : 2}<span class="desc">(컨테이너가 비좁아서 item이 다 못 들어갈 때만 사용가능)</span> </h2>
+                        <h2 class="tit">A = {flex-shrink : 2}<span class="desc">(컨테이너가 비좁아서 item이 다 못 들어갈 때만
+                                사용가능)</span> </h2>
                         <span>BOX</span>
                         <div class="box box2">
                             <div class="item a"><span>A</span></div>
@@ -131,7 +133,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <h2 class="tit">A = {flex-shrink : 0}<span class="desc">(A는 죽어도 안 줄어들겠다는 소리. A는 개인주의야)</span> </h2>
+                        <h2 class="tit">A = {flex-shrink : 0}<span class="desc">(A는 죽어도 안 줄어들겠다는 소리. A는 개인주의야)</span>
+                        </h2>
                         <span>BOX</span>
                         <div class="box box3">
                             <div class="item a"><span>A</span></div>
@@ -149,7 +152,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <h2 class="tit">A = {flex : 1 1 auto}<span class="desc">(위 세 속성의 축약형 grow shrink basis 순으로 작성)</span> </h2>
+                        <h2 class="tit">A = {flex : 1 1 auto}<span class="desc">(위 세 속성의 축약형 grow shrink basis 순으로
+                                작성)</span> </h2>
                         <span>BOX</span>
                         <div class="box box5">
                             <div class="item a"><span>A</span></div>
@@ -160,7 +164,8 @@
                 </div>
                 <div class="contents part5">
                     <div class="content-box">
-                        <h2 class="tit">BOX = {align-items:flex-start}<span class="desc">(item을 정렬(위 아래)할 때 사용 default : stretch)</span></h2>
+                        <h2 class="tit">BOX = {align-items:flex-start}<span class="desc">(item을 정렬(위 아래)할 때 사용 default :
+                                stretch)</span></h2>
                         <span>BOX</span>
                         <div class="box box1">
                             <div class="item a"><span>A</span></div>
@@ -189,7 +194,8 @@
                 </div>
                 <div class="contents part6">
                     <div class="content-box">
-                        <h2 class="tit">BOX = {justify-content: flex-start}<span class="desc">(좌측 정렬 사용 default : flex-start)</span></h2>
+                        <h2 class="tit">BOX = {justify-content: flex-start}<span class="desc">(좌측 정렬 사용 default :
+                                flex-start)</span></h2>
                         <span>BOX</span>
                         <div class="box box1">
                             <div class="item a"><span>A</span></div>
@@ -207,7 +213,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <h2 class="tit">BOX = {justify-content: space-between}<span class="desc">(item끼리 일정한 간격을 두고 정렬)</span></h2>
+                        <h2 class="tit">BOX = {justify-content: space-between}<span class="desc">(item끼리 일정한 간격을 두고
+                                정렬)</span></h2>
                         <span>BOX</span>
                         <div class="box box3">
                             <div class="item a"><span>A</span></div>
@@ -216,7 +223,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <h2 class="tit">BOX = {justify-content: space-around}<span class="desc">(item이 양 옆으로 여백을 두고 정렬)</span></h2>
+                        <h2 class="tit">BOX = {justify-content: space-around}<span class="desc">(item이 양 옆으로 여백을 두고
+                                정렬)</span></h2>
                         <span>BOX</span>
                         <div class="box box4">
                             <div class="item a"><span>A</span></div>
@@ -225,6 +233,71 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="grid">
+                <h1># display : GRID</h1>
+                <p>페이지를 여러 주요 영역으로 나누거나, <b class="fy">크기와 위치</b> 및 <b class="fy">문서 계층 구조</b>의 관점에서
+                    <br>HTML 요소간의 관계를 정의하는 데 특화돼있다.</p>
+                <p><b class="fy">세로 열</b>과 <b class="fy">가로 행</b>을 기준으로 요소를 쉽게 정렬할 수 있다.</p>
+                <div class="contents grid-part1">
+                    <div class="content-box">
+                        <h2 class="tit">BOX =<br>
+                            { <b class="attr">display</b>: grid; }<br>
+                            { <b class="attr">grid-template-columns</b> : repeat(3, 1fr); } <b class="desc"> = 가로로 3등분
+                                하겠다.</b><br>
+                            { <b class="attr">grid-auto-rows</b> : minmax(200px, auto); }<b class="desc"> = 세로는 한칸에 최소
+                                200px 최대는 auto로 정한다</b> <br>
+                        </h2>
+                        <span class="box-txt">BOX</span>
+
+
+
+                        <div class="box box1">
+                            <div class="item a"><span>A</span></div>
+                            <div class="item b"><span>B</span></div>
+                            <div class="item c"><span>C</span></div>
+                            <div class="item d"><span>C</span></div>
+                            <div class="col-box">
+                                <span class="col-num">1</span>
+                                <span class="col-num">2</span>
+                                <span class="col-num">3</span>
+                                <span class="col-num">4</span>
+                            </div>
+                            <div class="row-box">
+                                <span class="row-num">1</span>
+                                <span class="row-num">2</span>
+                                <span class="row-num">3</span>
+                                <span class="row-num">4</span>
+                                <span class="row-num">5</span>
+                                <span class="row-num">6</span>
+                            </div>
+                        </div>
+                        <p><b class="fy">3등분</b>하였기 때문에 가로로는 <b class="fy">1</b> 번부터 <b class="fy">4</b> 번까지 번호가 매겨진다
+                        </p>
+                        <p>세로로는 따로 box에서 지정하지 않았기 때문에 <b class="fy">item의 속성</b>에 따라 기준이 달라진다.</p>
+                        <h2 class="tit">A =<br>
+                            { <b class="attr">grid-column</b> : 1; } <b class="desc">= 가로기준 <b class="fy">1</b> 지점에서 한 칸만큼의 넓이를 가진다.</b><br>
+                            { <b class="attr">grid-row</b> : 1 / 4; } <b class="desc">= 세로기준 <b class="fy">1</b> 지점부터 <b class="fy">4</b> 지점까지의 영역을 차지한다.</b>
+                            <br>
+                        </h2>
+                        <h2 class="tit">B =<br>
+                            { <b class="attr">grid-column</b> : 2 / 4; } <b class="desc">= 가로기준 <b class="fy">2</b> 지점부터 <b class="fy">4</b> 지점까지의 영역을 차지한다</b><br>
+                            { <b class="attr">grid-row</b> : 2; } <b class="desc">= 세로기준 <b class="fy">2</b> 지점에서 한 칸만큼을 차지하겠다.</b>
+                            <br>
+                        </h2>
+                        <h2 class="tit">C =<br>
+                            { <b class="attr">grid-column</b> : 3 / 4; } <b class="desc">= 가로기준 <b class="fy">3</b> 지점부터 <b class="fy">4</b> 지점까지의 영역을 차지한다</b><br>
+                            { <b class="attr">grid-row</b> : 3 / 6; } <b class="desc">= 세로기준 <b class="fy">3</b> 지점부터 <b class="fy">6</b> 지점까지의 영역을 차지하겠다.</b>
+                            <br>
+                        </h2>
+                        <h2 class="tit">D =<br>
+                            { <b class="attr">grid-column</b> : 1 / 3; } <b class="desc">= 가로기준 <b class="fy">1</b> 지점부터 <b class="fy">3</b> 지점까지의 영역을 차지한다</b><br>
+                            { <b class="attr">grid-row</b> : 3 / 5; } <b class="desc">= 세로기준 <b class="fy">3</b> 지점부터 <b class="fy">5</b> 지점까지의 영역을 차지하겠다.</b>
+                            <br>
+                        </h2>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
