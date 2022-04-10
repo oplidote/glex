@@ -184,31 +184,21 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.bt-box button{
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #888;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #888;
+    cursor: pointer;
+    transition: .5s;
+}
 .bt-box button:hover{
     color: #fff;
     border-color: #fff;
-}
-.flex-bt {
-    position: relative;
-    display: block;
-    font-size: 50px;
-    color: #888;
-    padding: 20px 30px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #888;
-    cursor: pointer;
-}
-.grid-bt {
-    position: relative;
-    display: block;
-    font-size: 50px;
-    color: #888;
-    padding: 20px 30px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #888;
-    cursor: pointer;
 }
 .bt-box button.on{
     transition: .3s;
